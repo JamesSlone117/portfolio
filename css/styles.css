@@ -1,9 +1,39 @@
-
-
-/* Colors: */
+/* Colors */
 :root {
 --red-color-db1c1a: #DB1C1A;
 --white-color-ffffff: #FFFFFF;
 --blue-color-021427: #021427;
+--site-font-montserrat: 'montserrat';
 }
+
+
+
+.text-primary {
+    color: var(--white-color-ffffff) !important;
+    font-family: var(--site-font-montserrat);
+}
+
+
+.bg-primary {
+    background-color: var(--blue-color-021427) !important;
+}
+
+.bg-secondary {
+    background-color: var(--red-color-db1c1a) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
