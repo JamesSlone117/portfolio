@@ -17,23 +17,23 @@
 <body class="bg-primary text-primary">
 
   <!-- repsonsive nav  with logo dislayed on the left and menu items to the right-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Blitz Brickz</a>
+      <a class="navbar-brand text-primary" href="index.html">Blitz Brickz</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class=" text-primary"><i class="fa fa-arrow-down"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active text-primary" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link text-primary" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link text-primary" href="contact.html">Contact</a>
           </li>
 
         </ul>
@@ -42,6 +42,7 @@
   </nav>
 
   <!-- header hero banner with text to the left -->
+  
 
 
   <!-- section header with image and skiplink button -->
@@ -54,15 +55,25 @@
 
   <div class="container text-center p-5">
     <h3>Contact Me</h3>
-    <button type="button " class="btn btn-primary btn-lg">Contact</button>
+    <button type="button" class="btn btn-primary btn-lg"><a class="text-primary" href="contact.html">Contact</a></button>
   </div>
 
 
 
-  <!-- footer with email + socal meadia icons + skip link that brings you back to the top-->
+<!-- skip link that brings you back to the top -->
+<div class="container p-3 text-end">
+  <a href="#" class="btn btn-primary btn-floating" id="skiplink">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+</div>
+  
 
-  <footer class="footer bg-secondary">
-    <div class="container">
+
+
+  <!-- footer with email + socal meadia icons -->
+
+  <footer class="footer bg-secondary p-md-3 p-lg-5">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 col-sm-12 text-md-left text-center">
           <!-- Email on the left for desktop -->
@@ -70,7 +81,7 @@
         </div>
         <div class="col-md-6 col-sm-12 text-md-right text-center">
           <!-- Social icons on the right for desktop -->
-          <div class="social-icons ">
+          <div class="social-icons">
             <a href="https://youtube.com/@BlitzBrickz" class="mr-3"><i
                 class="fa-brands fa-youtube text-primary"></i></a>
             <a href="https://www.instagram.com/Blitz_Brickz/" class="mr-3"><i

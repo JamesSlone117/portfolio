@@ -11,6 +11,7 @@
 .text-primary {
     color: var(--white-color-ffffff) !important;
     font-family: var(--site-font-montserrat);
+    text-decoration: none;
 }
 
 
@@ -25,9 +26,7 @@
     background-color: var(--red-color-db1c1a) !important;
     color: var(--white-color-ffffff) !important;
     border: none;
-    
-
-
+    text-decoration: none;
 }
 
 
