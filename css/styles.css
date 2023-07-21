@@ -21,6 +21,14 @@
 .bg-secondary {
     background-color: var(--red-color-db1c1a) !important;
 }
+.btn-primary {
+    background-color: var(--red-color-db1c1a) !important;
+    color: var(--white-color-ffffff) !important;
+    border: none;
+    
+
+
+}
 
 
 
