@@ -4,15 +4,16 @@
 --white-color-ffffff: #FFFFFF;
 --blue-color-021427: #021427;
 --yellow-color-F4B701:#F4B701;
---site-font-montserrat: 'montserrat';
+--site-font-montserrat: 'Montserrat', sans-serif;;
 }
 
 
 
 .text-primary {
     color: var(--white-color-ffffff) !important;
-    font-family: var(--site-font-montserrat);
+    font-family: var(--site-font-montserrat) ;
     text-decoration: none;
+    font-weight: bold; 
 }
 
 .text-info {
