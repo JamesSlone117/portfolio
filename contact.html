@@ -45,62 +45,98 @@
 
   <!-- Lets Work Together h2 + p tag with contact text + img w/ white border to the right -->
 
-  <header class="container text-center">
-    <h2 class="display-1">Lets Work Together</h2>
-    <p class="">I'm open to video editing, videography, digital design, web design. Sent a Email to <a class="text-info" href="jamestslone@gmail.com">jamestslone@gmail.com</a> or fill
-      out the form.</p>
-      <img class="img-fluid border border-5 d-none d-md-inline" src="images/james-contact.jpg" alt="image of james slone">
-  </header>
+  <header class="container text-center text-lg-start">
 
+    <div class="col mx-lg-5">
+      <h2 class="display-1">Lets Work Together</h2>
+    </div>
+    
+      <div class="row">
+          <div class="col-lg-6 mx-lg-5">
+              <p class="">I'm open to video editing, videography, 
+                  digital design, web design. Sent a Email to <a class="text-info"
+                  href="jamestslone@gmail.com">jamestslone@gmail.com</a> or fill
+                  out the form.</p>
+          </div>
+      </div>
+  </div>
+  
+ 
+  
+  </header>
 
 
   <!-- form starts -->
   <div class="container p-5">
-    <div class="row justify-content-center">
-      <div class="col-md-6 col-lg-6">
-        <form>
-          <!-- lable name + input box -->
+    <div class="row">
+      <div class="col-sm-8 justify-content-center">
+        <!-- lable name + input box -->
 
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-          </div>
+        <div class="form-group py-2">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
 
-          <!-- lable Email + input box -->
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-          </div>
+        <!-- lable Email + input box -->
+        <div class="form-group py-2">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
 
-          <!-- lable Phone + input box-->
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
-          </div>
+        <!-- lable Phone + input box-->
+        <div class="form-group py-2">
+          <label for="phone">Phone</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+        </div>
 
-          <!-- lable Project + input box-->
-          <div class="form-group">
-            <label for="project">What is the Project?</label>
-            <input type="text" class="form-control" id="project" placeholder="Briefly describe your project">
-          </div>
+        <!-- lable Project + input box-->
+        <div class="form-group py-2">
+          <label for="project">What is the Project?</label>
+          <input type="text" class="form-control" id="project" placeholder="Briefly describe your project">
+        </div>
+      </div>
 
-          <!-- lable Message + input box sizeable-->
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" rows="5" placeholder="Write your message"></textarea>
-          </div>
+      <div class="col-sm-4 col-md-4">
+        <img class="img-fluid border border-5 d-none d-sm-inline rounded" src="images/james-contact.jpg"
+          alt="image of james slone">
+      </div>
+    </div>
 
-          <!-- Submit button -->
-          <div class="p-3">
-            <button type="submit" class="btn btn-primary btn-primary">Submit</button>
-          </div>
-          
-        </form>
+    <div class="row">
+      <div class="col py-2">
+        <!-- lable Message + input box sizeable-->
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Write your message"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Submit button -->
+      <div class="col-sm-12  d-flex align-items-center text-start">
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </div>
 
-<!-- footer with email + socal meadia icons -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer with email + socal meadia icons -->
   <footer class="footer bg-secondary p-md-3 p-lg-5">
     <div class="container-fluid">
       <div class="row">
@@ -127,7 +163,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/85ea36ec96.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/85ea36ec96.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
