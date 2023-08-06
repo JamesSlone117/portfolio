@@ -12,6 +12,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  
+  
+
 </head>
 
 <body class="bg-primary text-primary">
@@ -20,20 +26,20 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary">
     <div class="container-fluid">
       <a class="navbar-brand text-primary" href="index.html">Blitz Brickz</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class=" text-primary"><i class="fa fa-arrow-down"></i></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
           <li class="nav-item">
-            <a class="nav-link active text-primary" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active text-primary fs-2 display-1" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="about.html">About</a>
+            <a class="nav-link text-primary fs-2 display-1" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="contact.html">Contact</a>
+            <a class="nav-link text-primary fs-2 display-1" href="contact.html">Contact</a>
           </li>
 
         </ul>
@@ -41,15 +47,13 @@
     </div>
   </nav>
 
+
   <!-- header hero banner with text to the left -->
-  <div class="container text-center p-0 hero-banner">
-    <img class="img-fluid " src="images/header-banner.png" alt="">
-
-    <h1 class="display-1">Video Editor</h1>
-  </div>
-
-
-
+  <section class="dark-bg" id="hero">
+    <div class="container-fluid">
+        <h1 class="display-1 animate__animated animate__fadeIn">Video Editor</h1>
+    </div>
+  </section>
 
   <!-- section header with image and skiplink button -->
   <div class="container text-center p-5">
@@ -62,7 +66,7 @@
 
 
   <!-- h3 with videos layed out with header on top of videos with a decription using grid with background useing border radius -->
-  <div class="container text-center p-5 " id="portfolio">
+  <div class="container-fluid text-center p-5 " id="portfolio">
     <h2>Client Videos</h2>
     <div class="row">
 
@@ -84,7 +88,10 @@
       </div>
 
       <div class="col embed-responsive embed-responsive-16by9" id="video4">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/iQQNpIjKhdI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iQQNpIjKhdI?controls=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
       </div>
 
       <!-- Generic Stud -->
@@ -106,24 +113,55 @@
       <!-- Sacred -->
 
       <div class="col embed-responsive embed-responsive-16by9" id="video4">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/_OcxP9h83lU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_OcxP9h83lU?controls=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
       </div>
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
   </div>
+
+
   <!-- h3 with short film as one block -->
   <div class="container text-center p-5">
     <h3>Short Films</h3>
+
+
+    <!-- slideshow -->
+    <div id="videocarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/4gI60A-qmEs" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="carousel-item">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/yhy4uFTdci0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="carousel-item">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/7yyRGZ7wRmo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#videocarousel"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#videocarousel"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </div>
 
   <!-- "contact me" h3 with button bellow that takes you to the contact page -->
@@ -134,17 +172,12 @@
         href="contact.html">Contact</a></button>
   </div>
 
-
-
   <!-- skip link that brings you back to the top -->
   <div class="container p-3 text-end">
     <a href="#" class="btn btn-primary btn-floating" id="skiplink">
       <i class="fa fa-arrow-up"></i>
     </a>
   </div>
-
-
-
 
   <!-- footer with email + socal meadia icons -->
 
@@ -174,6 +207,7 @@
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/85ea36ec96.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
