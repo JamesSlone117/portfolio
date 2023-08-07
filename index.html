@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="bg-primary text-primary">
@@ -47,13 +47,13 @@
   </nav>
 
 
-  
+
 
 
   <!-- header hero banner with text to the left -->
-  <section class="dark-bg" id="hero">
-    <div class="container-fluid">
-        <h1 class="display-1 animate__animated animate__fadeIn">Video Editor</h1>
+  <section class="bg" id="hero">
+    <div class="container-fluid d-flex justify-content-left align-items-center p-5">
+      <h1 class="display-1 animate__animated animate__fadeIn">Video <br class="d-md-none"> Editor</h1>
     </div>
   </section>
 
@@ -61,14 +61,14 @@
 
 
 
-<!-- section header with image and skiplink button -->
+  <!-- section header with image and skiplink button -->
 
   <div class="text-center">
     <div class="card">
-      <img src="images/desktop-setup.png" class="card-img" alt="desktop background with premiere open">
+      <img src="images/desktop-setup.png" class="card-img " alt="desktop background with premiere open">
       <div class="card-img-overlay">
         <div class="card-body">
-          <h3 class="display-1 text-primary">Recent Projects</h3>
+          <h3 class="display-1 text-primary dropshadow">Recent Projects</h3>
           <button type="button" class="btn btn-primary btn-lg"><a class="text-primary" href="#portfolio">Portfolio <i
                 class="fa fa-arrow-down"></i></a></button>
         </div>
@@ -80,8 +80,9 @@
 
 
   <!-- h3 with videos layed out with header on top of videos with a decription using grid with background useing border radius -->
-  <div class="container-fluid text-center p-5 " id="portfolio">
-    <h2>Client Videos</h2>
+  <div class="container-fluid container-md text-center p-5 " id="portfolio">
+    <h2 class="display-2">Client Videos</h2>
+    <p class="fs-4 text-info">40 Million+ Total Views Across all Projects</p>
     <div class="row">
 
 
@@ -140,7 +141,8 @@
 
   <!-- h3 with short film as one block -->
   <div class="container text-center p-5">
-    <h3>Short Films</h3>
+    <h2 class="display-2 fs-1">Short Films</h2>
+    <p class="text-info fs-5">School & Personal Projects </p>
 
 
     <!-- slideshow -->
@@ -165,13 +167,11 @@
             allowfullscreen></iframe>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#videocarousel"
-        data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#videocarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#videocarousel"
-        data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#videocarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -187,15 +187,15 @@
   </div>
 
   <!-- skip link that brings you back to the top -->
-  <div class="container p-3 text-end">
-    <a href="#" class="btn btn-primary btn-floating" id="skiplink">
-      <i class="fa fa-arrow-up"></i>
+  <div class="container text-end">
+    <a href="#" class="btn text-primary btn-floating" id="skiplink">
+      <i class="fa-solid fa-angles-up display-3 p-3"></i>
     </a>
   </div>
 
   <!-- footer with email + socal meadia icons -->
 
-  <footer class="footer bg-secondary p-sm-3 p-md-4 p-lg-5">
+  <footer class="footer bg-secondary py-2 p-md-4 p-lg-5">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 col-sm-12 text-md-left text-center">
@@ -205,11 +205,11 @@
         <div class="col-md-6 col-sm-12 text-md-right text-center">
           <!-- Social icons on the right for desktop -->
           <div class="social-icons">
-            <a href="https://youtube.com/@BlitzBrickz" class="mr-3"><i
-                class="fa-brands fa-youtube text-primary"></i></a>
+            <a href="https://youtube.com/@BlitzBrickz"><i class="fa-brands fa-youtube text-primary fs-2 mx-3"></i></a>
             <a href="https://www.instagram.com/Blitz_Brickz/" class="mr-3"><i
-                class="fa-brands fa-twitter text-primary"></i></a>
-            <a href="https://twitter.com/Blitz_Brickz"><i class="fa-brands fa-instagram text-primary"></i></a>
+                class="fa-brands fa-twitter text-primary fs-2 mx-3"></i></a>
+            <a href="https://twitter.com/Blitz_Brickz"><i class="fa-brands fa-instagram text-primary fs-2 mx-3"></i></a>
+            <a href="https://github.com/JamesSlone117"><i class="fa-brands fa-github text-primary fs-2 mx-3"></i></a>
           </div>
         </div>
       </div>

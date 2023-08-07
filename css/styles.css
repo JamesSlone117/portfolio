@@ -35,7 +35,7 @@
     text-decoration: none;
 }
 
-.display-1 {
+.display-1, .display-2 {
     font-weight: bold; 
 }
 
@@ -51,7 +51,9 @@
 
 
 
-
+.dropshadow {
+    text-shadow: 2px 2px 4px black;
+}
 
 
 
@@ -67,15 +69,17 @@
 
 
 
-.dark-bg {
+.bg {
     background-image: url(../images/header-banner.png);
     background-size: cover;
     background-position: center;
 }
 
 #hero .container-fluid {
-    height:65vh;
+    height:55vh;
 }
+
+
 
 
 .card {
