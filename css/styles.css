@@ -13,7 +13,7 @@
     color: var(--white-color-ffffff) !important;
     font-family: var(--site-font-montserrat) ;
     text-decoration: none;
-    /* font-weight: bold;  */
+    font-weight: bold; 
 }
 
 .text-info {
@@ -41,6 +41,23 @@
 
 
 
+
+/* nav */
+.navbar-toggler {
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .image-without-gap {
     display: block;
     border: 1px solid black; 
@@ -59,7 +76,6 @@
 #hero .container-fluid {
     height:65vh;
 }
-
 
 
 .card {

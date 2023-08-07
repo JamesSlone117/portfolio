@@ -13,50 +13,53 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="bg-primary text-primary">
 
   <!-- repsonsive nav with logo dislayed on the left and menu items to the right-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand text-primary" href="index.html">Blitz Brickz</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class=" text-primary"><i class="fa fa-arrow-down"></i></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
-          <li class="nav-item">
-            <a class="nav-link active text-primary" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary" href="contact.html">Contact</a>
-          </li>
-
-        </ul>
+  <nav class="navbar navbar-expand-md bg-body-tertiary bg-primary">
+    <a class="navbar-brand text-primary fs-3 ms-3" href="index.html">
+      <div class="col-6 ">
+        <img class="img-fluid" src="images/blitz-logo.png" alt="blitz brickz logo" width="365">
       </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1"
+      aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="text-primary fs-1"><i class="fa-solid fa-bars"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbar1">
+      <ul class="navbar-nav md-auto mb-2 mb-lg-0 ml-auto text-center">
+        <li class="nav-item ">
+          <a class="nav-link active text-primary display-1 mx-3 fs-2" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary display-1 mx-3 fs-2" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary display-1 mx-3 fs-2" href="contact.html">Contact</a>
+        </li>
+      </ul>
     </div>
   </nav>
 
   <!-- about h2 + p tag with about us text disription + img w/ white border-->
-<div class="container">
-  <h2 class="display-1 text-center animate__animated animate__fadeIn">About</h2>
-  <div class="row">
+  <div class="container">
+    <h2 class="display-1 text-center animate__animated animate__fadeIn">About</h2>
+    <div class="row">
       <div class="col-sm-6 order-1">
-          <p class="display-7 p-2">I’m James, a 18 year old interactive media design college student with a passion for creating. With over 3 years of experience in self taught video editing and photoshop skills. I started freelance video editing for content creators in 2022. </p>
+        <p class="display-7 p-2">I’m James, a 18 year old interactive media design college student with a passion for
+          creating. With over 3 years of experience in self taught video editing and photoshop skills. I started
+          freelance video editing for content creators in 2022. </p>
       </div>
       <div class="col-sm-6 order-0">
-          <img class="img-fluid border border-5 image-without-gap rounded" src="images/james-about.png"
+        <img class="img-fluid border border-5 image-without-gap rounded" src="images/james-about.png"
           alt="image of james slone holding a camera outside">
       </div>
+    </div>
   </div>
-</div>
 
   <section class="container text-center p-2 col-ms-6 order-0">
     <div class="col">
@@ -69,25 +72,25 @@
             <span class="display-6">+3 years</span>
           </figure>
         </div>
-  
+
         <!-- premiere pro img with text under it -->
         <div class="col-6 col-md-3">
           <!-- Use the "col-6" class to make the content occupy half of the row on all screen sizes -->
           <figure class="figure">
             <img src="images/adobe-premiere-pro.webp" class="figure-img img-fluid" alt="image of premiere pro icon">
-            <span class="display-6">+3 years</span> 
+            <span class="display-6">+3 years</span>
           </figure>
         </div>
-        
-        
-        
+
+
+
 
       </div>
     </div>
   </section>
-  
-  
-  
+
+
+
 
 
   <!-- "contact me" h3 with button bellow that takes you to the contact page -->

@@ -12,36 +12,42 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body class="bg-primary text-primary">
 
   <!-- repsonsive nav with logo dislayed on the left and menu items to the right-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand text-primary" href="index.html">Blitz Brickz</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class=" text-primary"><i class="fa fa-arrow-down"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
-          <li class="nav-item">
-            <a class="nav-link active text-primary fs-2 display-1" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary fs-2 display-1" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary fs-2 display-1" href="contact.html">Contact</a>
-          </li>
 
-        </ul>
+  <nav class="navbar navbar-expand-md bg-body-tertiary bg-primary">
+    <a class="navbar-brand text-primary fs-3 ms-3" href="index.html">
+      <div class="col-6 ">
+        <img class="img-fluid" src="images/blitz-logo.png" alt="blitz brickz logo" width="365">
       </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1"
+      aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="text-primary fs-1"><i class="fa-solid fa-bars"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbar1">
+      <ul class="navbar-nav md-auto mb-2 mb-lg-0 ml-auto text-center">
+        <li class="nav-item ">
+          <a class="nav-link active text-primary display-1 mx-3 fs-2" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary display-1 mx-3 fs-2" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary display-1 mx-3 fs-2" href="contact.html">Contact</a>
+        </li>
+      </ul>
     </div>
   </nav>
+
+
+  
 
 
   <!-- header hero banner with text to the left -->
@@ -62,7 +68,7 @@
       <img src="images/desktop-setup.png" class="card-img" alt="desktop background with premiere open">
       <div class="card-img-overlay">
         <div class="card-body">
-          <h3 class="display-1 text-primary drop-shadow-md">Recent Projects</h3>
+          <h3 class="display-1 text-primary">Recent Projects</h3>
           <button type="button" class="btn btn-primary btn-lg"><a class="text-primary" href="#portfolio">Portfolio <i
                 class="fa fa-arrow-down"></i></a></button>
         </div>
