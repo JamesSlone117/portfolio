@@ -13,156 +13,131 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body class="bg-primary text-primary">
+  <script src="https://kit.fontawesome.com/85ea36ec96.js" crossorigin="anonymous"></script>
 
   <!-- repsonsive nav with logo dislayed on the left and menu items to the right-->
-
-  <nav class="navbar navbar-expand-md bg-body-tertiary bg-primary">
+  <nav class="navbar navbar-expand-md bg-body-tertiary bg-primary" role="navigation" aria-label="Main Navigation">
     <a class="navbar-brand text-primary fs-3 ms-3" href="index.html">
-      <div class="col-6 ">
+      <div class="col-6">
         <img class="img-fluid" src="images/blitz-logo.png" alt="blitz brickz logo" width="365">
       </div>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1"
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
       aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="text-primary fs-1"><i class="fa-solid fa-bars"></i></span>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbar1">
-      <ul class="navbar-nav md-auto mb-2 mb-lg-0 ml-auto text-center">
-        <li class="nav-item ">
+    <div class="collapse navbar-collapse justify-content-end" id="navbar">
+      <ul class="navbar-nav md-auto mb-2 mb-lg-0 ml-auto text-center" role="menu">
+        <li class="nav-item" role="menuitem">
           <a class="nav-link active text-primary display-1 mx-3 fs-2" aria-current="page" href="index.html">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" role="menuitem">
           <a class="nav-link text-primary display-1 mx-3 fs-2" href="about.html">About</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" role="menuitem">
           <a class="nav-link text-primary display-1 mx-3 fs-2" href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
 
-
-
-
-
   <!-- header hero banner with text to the left -->
-  <section class="bg" id="hero">
+  <header class="bg" id="hero" role="banner" aria-label="Hero Banner">
     <div class="container-fluid d-flex justify-content-left align-items-center p-5">
-      <h1 class="display-1 animate__animated animate__fadeIn">Video <br class="d-md-none"> Editor</h1>
+      <h1 role="heading" aria-level="1" class="display-1 animate__animated animate__fadeIn">Video <br class="d-md-none">
+        Editor</h1>
     </div>
-  </section>
-
-
-
-
+  </header>
 
   <!-- section header with image and skiplink button -->
 
-  <div class="text-center">
+  <section class="text-center" role="region">
     <div class="card">
-      <img src="images/desktop-setup.png" class="card-img " alt="desktop background with premiere open">
+      <img src="images/desktop-setup.png" class="card-img p-md-4" alt="desktop background with premiere open">
       <div class="card-img-overlay">
-        <div class="card-body">
-          <h3 class="display-1 text-primary dropshadow">Recent Projects</h3>
-          <button type="button" class="btn btn-primary btn-lg"><a class="text-primary" href="#portfolio">Portfolio <i
-                class="fa fa-arrow-down"></i></a></button>
+        <div class="card-body my-4">
+          <h2 class="display-1 text-primary dropshadow">Recent Projects</h2>
+          <a aria-label="skip link" class="btn btn-primary btn-lg text-primary" href="#portfolio">Portfolio <i
+              class="fa fa-arrow-down"></i></a>
         </div>
       </div>
     </div>
-  </div>
-
-
-
+  </section>
 
   <!-- h3 with videos layed out with header on top of videos with a decription using grid with background useing border radius -->
-  <div class="container-fluid container-md text-center p-5 " id="portfolio">
-    <h2 class="display-2">Client Videos</h2>
+  <div class="container-fluid container-md text-center p-5" id="portfolio" role="region" aria-label="Portfolio Videos">
+    <h3 role="heading" aria-level="3" class="display-3">Client Videos</h3>
     <p class="fs-4 text-info">40 Million+ Total Views Across all Projects</p>
     <div class="row">
-
-
 
       <!-- republic studs -->
       <div class="col embed-responsive embed-responsive-16by9" id="video1">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/m32Fc26HmFI?controls=0"
-          title="YouTube video player" frameborder="0"
+          title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
 
       <div class="col embed-responsive embed-responsive-16by9" id="video2">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/cW_IiYIWbas?controls=0"
-          title="YouTube video player" frameborder="0"
+          title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
 
-      <div class="col embed-responsive embed-responsive-16by9" id="video4">
+      <div class="col embed-responsive embed-responsive-16by9" id="video3">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/iQQNpIjKhdI?controls=0"
-          title="YouTube video player" frameborder="0"
+          title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
 
       <!-- Generic Stud -->
 
-      <div class="col embed-responsive embed-responsive-16by9" id="video3">
+      <div class="col embed-responsive embed-responsive-16by9" id="video4">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/n5ai6iLQFAQ?controls=0"
-          title="YouTube video player" frameborder="0"
+          title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
 
-      <div class="col embed-responsive embed-responsive-16by9" id="video4">
+      <div class="col embed-responsive embed-responsive-16by9" id="video5">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/mmph8KDrboc?controls=0"
-          title="YouTube video player" frameborder="0"
+          title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
 
       <!-- Sacred -->
 
-      <div class="col embed-responsive embed-responsive-16by9" id="video4">
+      <div class="col embed-responsive embed-responsive-16by9" id="video6">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/_OcxP9h83lU?controls=0"
-          title="YouTube video player" frameborder="0"
+          title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
     </div>
   </div>
 
-  </div>
-
-
   <!-- h3 with short film as one block -->
-  <div class="container text-center p-5">
-    <h2 class="display-2 fs-1">Short Films</h2>
-    <p class="text-info fs-5">School & Personal Projects </p>
-
-
+  <section class="container text-center p-5" role="region" aria-label="Short Films Carousel">
+    <h3 role="heading" aria-level="3" class="display-3">Short Films</h3>
+    <p class="text-info fs-5">School & Personal Projects</p>
     <!-- slideshow -->
     <div id="videocarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/4gI60A-qmEs" title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
         </div>
         <div class="carousel-item">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/yhy4uFTdci0" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
-        <div class="carousel-item">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/7yyRGZ7wRmo" title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
         </div>
@@ -176,15 +151,14 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-  </div>
+  </section>
 
   <!-- "contact me" h3 with button bellow that takes you to the contact page -->
 
-  <div class="container text-center p-5">
-    <h3>Contact Me</h3>
-    <button type="button" class="btn btn-primary btn-lg"><a class="text-primary"
-        href="contact.html">Contact</a></button>
-  </div>
+  <aside class="container text-center p-5">
+    <h4 class="display-5" role="heading" aria-level="4">Contact Me</h4>
+    <a aria-label="contact button" class="btn btn-primary btn-lg text-primary" href="contact.html">Contact</a>
+  </aside>
 
   <!-- skip link that brings you back to the top -->
   <div class="container text-end">
@@ -195,7 +169,7 @@
 
   <!-- footer with email + socal meadia icons -->
 
-  <footer class="footer bg-secondary py-2 p-md-4 p-lg-5">
+  <footer class="footer bg-secondary py-2 p-md-4 p-lg-5" role="contentinfo">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 col-sm-12 text-md-left text-center">
@@ -205,17 +179,19 @@
         <div class="col-md-6 col-sm-12 text-md-right text-center">
           <!-- Social icons on the right for desktop -->
           <div class="social-icons">
-            <a href="https://youtube.com/@BlitzBrickz"><i class="fa-brands fa-youtube text-primary fs-2 mx-3"></i></a>
-            <a href="https://www.instagram.com/Blitz_Brickz/" class="mr-3"><i
-                class="fa-brands fa-twitter text-primary fs-2 mx-3"></i></a>
-            <a href="https://twitter.com/Blitz_Brickz"><i class="fa-brands fa-instagram text-primary fs-2 mx-3"></i></a>
-            <a href="https://github.com/JamesSlone117"><i class="fa-brands fa-github text-primary fs-2 mx-3"></i></a>
+            <a href="https://youtube.com/@BlitzBrickz" role="link" aria-label="YouTube">
+              <i class="fa-brands fa-youtube text-primary fs-2 mx-3"></i></a>
+            <a href="https://www.instagram.com/Blitz_Brickz/" role="link" aria-label="Instagram">
+              <i class="fa-brands fa-twitter text-primary fs-2 mx-3"></i></a>
+            <a href="https://twitter.com/Blitz_Brickz" role="link" aria-label="Twitter">
+              <i class="fa-brands fa-instagram text-primary fs-2 mx-3"></i></a>
+            <a href="https://github.com/JamesSlone117" role="link" aria-label="Github">
+              <i class="fa-brands fa-github text-primary fs-2 mx-3"></i></a>
           </div>
         </div>
       </div>
     </div>
   </footer>
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

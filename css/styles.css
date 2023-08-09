@@ -1,33 +1,36 @@
-/* Colors */
+/* Define color variables for consistent use */
 :root {
---red-color-db1c1a: #DB1C1A;
---white-color-ffffff: #FFFFFF;
---blue-color-021427: #021427;
---yellow-color-F4B701:#F4B701;
---site-font-montserrat: 'Montserrat', sans-serif;;
+    --red-color-db1c1a: #DB1C1A;
+    --white-color-ffffff: #FFFFFF;
+    --blue-color-021427: #021427;
+    --yellow-color-F4B701: #F4B701;
+    --site-font-montserrat: 'Montserrat', sans-serif;
 }
 
-
-
+/* Styling for primary text */
 .text-primary {
     color: var(--white-color-ffffff) !important;
-    font-family: var(--site-font-montserrat) ;
+    font-family: var(--site-font-montserrat);
     text-decoration: none;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
+/* Styling for informational text */
 .text-info {
     color: var(--yellow-color-F4B701) !important;
 }
 
+/* Styling for primary background */
 .bg-primary {
     background-color: var(--blue-color-021427) !important;
 }
 
+/* Styling for secondary background */
 .bg-secondary {
     background-color: var(--red-color-db1c1a) !important;
 }
 
+/* Styling for primary button */
 .btn-primary {
     background-color: var(--red-color-db1c1a) !important;
     color: var(--white-color-ffffff) !important;
@@ -35,67 +38,70 @@
     text-decoration: none;
 }
 
-.display-1, .display-2 {
-    font-weight: bold; 
+/* Styling for various display classes */
+.display-1,
+.display-2,
+.display-3,
+.display-5,
+.display-6 {
+    font-weight: bold;
 }
 
-
-
-
-/* nav */
+/* Styling for navbar toggler */
 .navbar-toggler {
     border: none;
 }
 
-
-
-
-
+/* Add a drop shadow to elements */
 .dropshadow {
     text-shadow: 2px 2px 4px black;
 }
 
-
-
-
-
-
+/* Style for images without gaps */
 .image-without-gap {
     display: block;
-    border: 1px solid black; 
-    margin: 0; 
-    padding: 0; 
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
 }
 
-
-
+/* Background image styling with cover and centered position */
 .bg {
     background-image: url(../images/header-banner.png);
     background-size: cover;
     background-position: center;
 }
 
+/* Set container height for hero section */
 #hero .container-fluid {
-    height:55vh;
+    height: 55vh;
 }
 
-
-
-
+/* Remove border from cards */
 .card {
     border: none;
+    background-color: var(--blue-color-021427);
 }
 
+/* Ensures image covers the entire container */
+.card-img {
+    object-fit: cover; 
+    width: 100%; 
+    height: 300px; 
+    opacity: 0.7;
+    /* padding-top: 2rem; */
+  }
 
+  /* @media screen and (min-width: 1400px) {
+    .card-img {
+        object-fit: contain; 
+        width: 100%; 
+        height: 37rem; 
+        opacity: 0.7;
+       
+      }
+   } */
 
-
-
-
-
-
-
-
-
-
-
-
+   :focus {
+    outline: 1px solid var(--white-color-ffffff);
+  }

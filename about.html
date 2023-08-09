@@ -19,26 +19,26 @@
 <body class="bg-primary text-primary">
 
   <!-- repsonsive nav with logo dislayed on the left and menu items to the right-->
-  <nav class="navbar navbar-expand-md bg-body-tertiary bg-primary">
+  <nav class="navbar navbar-expand-md bg-body-tertiary bg-primary" role="navigation">
     <a class="navbar-brand text-primary fs-3 ms-3" href="index.html">
-      <div class="col-6 ">
+      <div class="col-6">
         <img class="img-fluid" src="images/blitz-logo.png" alt="blitz brickz logo" width="365">
       </div>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1"
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
       aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="text-primary fs-1"><i class="fa-solid fa-bars"></i></span>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbar1">
-      <ul class="navbar-nav md-auto mb-2 mb-lg-0 ml-auto text-center">
-        <li class="nav-item ">
+    <div class="collapse navbar-collapse justify-content-end" id="navbar">
+      <ul class="navbar-nav md-auto mb-2 mb-lg-0 ml-auto text-center" role="menu">
+        <li class="nav-item" role="menuitem">
           <a class="nav-link active text-primary display-1 mx-3 fs-2" aria-current="page" href="index.html">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" role="menuitem">
           <a class="nav-link text-primary display-1 mx-3 fs-2" href="about.html">About</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" role="menuitem">
           <a class="nav-link text-primary display-1 mx-3 fs-2" href="contact.html">Contact</a>
         </li>
       </ul>
@@ -46,23 +46,24 @@
   </nav>
 
   <!-- about h2 + p tag with about us text disription + img w/ white border-->
-  <div class="container">
-    <h2 class="display-1 text-center text-md-start  animate__animated animate__fadeIn">About</h2>
+  <article class="container">
+    <h2 role="heading" aria-level="2" class="display-1 text-center text-md-start  animate__animated animate__fadeIn">
+      About</h2>
     <div class="row">
       <div class="col-md-6 order-1">
         <p class="fs-4 p-2">I’m James, a 18 year old interactive media design college student with a passion for
           creating. With over 3 years of experience in self taught video editing and photoshop skills. I started
           freelance video editing for content creators in 2022. </p>
       </div>
-      <div class="col-md-6 order-0">
+      <picture class="col-md-6 order-0">
         <img class="img-fluid border border-5 image-without-gap rounded" src="images/james-about.png"
           alt="image of james slone holding a camera outside">
-      </div>
+      </picture>
     </div>
-  </div>
+  </article>
 
-  <section class="container text-center p-2 order-0 ">
-    <div class="col ">
+  <aside class="container text-center p-2 order-0">
+    <div class="col">
       <div class="row">
         <!-- photoshop img with text under it -->
         <div class="col-6 col-md-3 order-1">
@@ -81,38 +82,28 @@
             <span class="display-6">+3 years</span>
           </figure>
         </div>
-
-
-
-
       </div>
     </div>
-  </section>
-
-
-
-
+  </aside>
 
   <!-- "contact me" h3 with button bellow that takes you to the contact page -->
 
-  <div class="container text-center p-5">
-    <h3>Contact Me</h3>
-    <button type="button" class="btn btn-primary btn-lg"><a class="text-primary"
-        href="contact.html">Contact</a></button>
+  <aside class="container text-center p-5">
+    <h4 class="display-5" role="heading" aria-level="4">Contact Me</h4>
+    <a aria-label="contact button" class="btn btn-primary btn-lg text-primary" href="contact.html">Contact</a>
+  </aside>
+
+  <!-- skip link that brings you back to the top -->
+  <div class="container text-end">
+    <a href="#" class="btn text-primary btn-floating" id="skiplink" role="link">
+      <i class="fa-solid fa-angles-up display-3 p-3"></i>
+    </a>
   </div>
-
-
- <!-- skip link that brings you back to the top -->
- <div class="container text-end">
-  <a href="#" class="btn text-primary btn-floating" id="skiplink">
-    <i class="fa-solid fa-angles-up display-3 p-3"></i>
-  </a>
-</div>
 
 
   <!-- footer with email + socal meadia icons + skip link that brings you back to the top-->
 
-  <footer class="footer bg-secondary py-2 p-md-4 p-lg-5">
+  <footer class="footer bg-secondary py-2 p-md-4 p-lg-5" role="contentinfo">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 col-sm-12 text-md-left text-center">
@@ -122,11 +113,14 @@
         <div class="col-md-6 col-sm-12 text-md-right text-center">
           <!-- Social icons on the right for desktop -->
           <div class="social-icons">
-            <a href="https://youtube.com/@BlitzBrickz"><i class="fa-brands fa-youtube text-primary fs-2 mx-3"></i></a>
-            <a href="https://www.instagram.com/Blitz_Brickz/" class="mr-3"><i
-                class="fa-brands fa-twitter text-primary fs-2 mx-3"></i></a>
-            <a href="https://twitter.com/Blitz_Brickz"><i class="fa-brands fa-instagram text-primary fs-2 mx-3"></i></a>
-            <a href="https://github.com/JamesSlone117"><i class="fa-brands fa-github text-primary fs-2 mx-3"></i></a>
+            <a href="https://youtube.com/@BlitzBrickz" role="link" aria-label="YouTube">
+              <i class="fa-brands fa-youtube text-primary fs-2 mx-3"></i></a>
+            <a href="https://www.instagram.com/Blitz_Brickz/" role="link" aria-label="Instagram">
+              <i class="fa-brands fa-twitter text-primary fs-2 mx-3"></i></a>
+            <a href="https://twitter.com/Blitz_Brickz" role="link" aria-label="Twitter">
+              <i class="fa-brands fa-instagram text-primary fs-2 mx-3"></i></a>
+            <a href="https://github.com/JamesSlone117" role="link" aria-label="Github">
+              <i class="fa-brands fa-github text-primary fs-2 mx-3"></i></a>
           </div>
         </div>
       </div>
@@ -139,8 +133,6 @@
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/85ea36ec96.js" crossorigin="anonymous"></script>
-</body>
-
 </body>
 
 </html>
