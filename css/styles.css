@@ -104,7 +104,7 @@
   .animate-out, .animate-btn, .animate-skip, .animate-icon {
     transition-property: all;
     transition-duration: 0.3s;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in;
     font-weight: bold;
   }
 
@@ -123,6 +123,25 @@
   .animate-icon:hover {
     transform: scale(1.2);
   }
+
+
+  .animate-video {
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    font-weight: bold;
+    
+  }
+
+
+  .animate-video:hover {
+    transform: scale(0.97);
+    border: solid 2px var(--white-color-ffffff);
+    opacity: 0.7;
+  }
+
+
+
 
  
 
