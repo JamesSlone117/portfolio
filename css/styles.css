@@ -67,8 +67,6 @@
 
 /* Background image styling with cover and centered position */
 
-
-
 @media (min-width: 768px) {
     .bg {
         background-image: url(../images/header-banner.png);
@@ -84,18 +82,6 @@
         background-position: center;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Set container height for hero section */
 #hero .container-fluid {
@@ -116,10 +102,6 @@
     opacity: 0.7;
   }
 
-   /* :focus {
-    border: solid 2px var(--white-color-ffffff);
-  } */
-
   .animate-out:hover {
     color: var(--red-color-db1c1a) !important;
     transform: scale(1.1);
@@ -132,7 +114,6 @@
     transition-timing-function: ease-in;
     font-weight: bold;
   }
-
 
   .animate-btn:hover {
     color: var(--red-color-db1c1a) !important;
@@ -149,7 +130,6 @@
     transform: scale(1.2);
   }
 
-
   .animate-video {
     transition-property: all;
     transition-duration: 0.2s;
@@ -158,21 +138,8 @@
     
   }
 
-
   .animate-video:hover {
     transform: scale(0.97);
     border: solid 2px var(--white-color-ffffff);
     opacity: 0.7;
   }
-
-
-
-
- 
-
-
-  
-
-
-
-
