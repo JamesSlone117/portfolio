@@ -1,6 +1,27 @@
 # James Slone - Portfolio Interview
 - Web Dev II Portfolio Final Project with Bootstrap
 
+
+## **What Was your Proess Designing your site?**
+
+**Well, Here it is:**
+
+1. Target Research
+2. Creating a style guide
+3. Lo-Fi Wireframes
+4. Colecting all images and videos
+5. High-Fidelity Wireframes
+6. Writing Pseudocode
+7. Creating basic layout in html for mobile
+8. Setting up colours in css
+9. Adding content and images
+10. Styling the layout in html for tablet
+11. Styling the layout in html for desktop
+12. Adding animations
+13. SEO and accessibility standards
+14. touch up
+15. finalize
+
 ## **What Were the Greatest Challanges Building your Site?**
 
 Well there were many challanges development but I am glad I had the time to go though and fix them! 
