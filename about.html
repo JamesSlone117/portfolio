@@ -64,8 +64,6 @@
           creating. With over 3 years of experience in self taught video editing and photoshop skills. I started
           freelance video editing for content creators in 2022. </p>
       </div>
-      
-
 
       <picture class="col-md-6 order-0">
         <!-- Source for larger screens -->
@@ -81,11 +79,6 @@
           alt="image of james slone holding a camera outside">
       </picture>
 
-
-
-
-
-
     </div>
   </article>
 
@@ -96,7 +89,16 @@
         <div class="col-6 col-md-3 order-1">
           <!-- Use the "col-6" class to make the content occupy half of the row on all screen sizes -->
           <figure class="figure">
-            <img src="images/adobe-photoshop.png" class="figure-img img-fluid" alt="image of photoshop icon">
+            <picture>
+              <!-- Source for larger screens -->
+              <source srcset="images/adobe-photoshop.png" media="(min-width: 768px)" alt="image of photoshop icon">
+            
+              <!-- Source for smaller screens -->
+              <source srcset="images/adobe-photoshop-small.png" media="(max-width: 767px)" alt="image of photoshop icon">
+            
+              <!-- Default image for browsers that do not support srcset -->
+              <img src="images/adobe-photoshop.png" class="figure-img img-fluid" alt="Description of the image" alt="image of photoshop icon">
+            </picture>
             <span class="display-6">+3 years</span>
           </figure>
         </div>
@@ -105,7 +107,16 @@
         <div class="col-6 col-md-3">
           <!-- Use the "col-6" class to make the content occupy half of the row on all screen sizes -->
           <figure class="figure">
-            <img src="images/adobe-premiere-pro.webp" class="figure-img img-fluid" alt="image of premiere pro icon">
+            <picture>
+              <!-- Source for larger screens -->
+              <source srcset="images/adobe-premiere-pro.webp" media="(min-width: 768px)" alt="image of premiere pro icon">
+            
+              <!-- Source for smaller screens -->
+              <source srcset="images/adobe-premiere-pro-small.webp" media="(max-width: 767px)" alt="image of premiere pro icon">
+            
+              <!-- Default image for browsers that do not support srcset -->
+              <img src="images/adobe-premiere-pro.webp" class="figure-img img-fluid" alt="Description of the image" alt="image of premiere pro icon">
+            </picture>
             <span class="display-6">+3 years</span>
           </figure>
         </div>
@@ -130,6 +141,9 @@
 
   <!-- footer with email + socal meadia icons + skip link that brings you back to the top-->
 
+
+
+  
   <footer class="footer bg-secondary py-2 p-md-4 p-lg-5" role="contentinfo">
     <div class="container-fluid">
       <div class="row">
@@ -155,6 +169,7 @@
   </footer>
 
 
+  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
