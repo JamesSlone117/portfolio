@@ -20,17 +20,17 @@
 
   <!-- repsonsive nav with logo dislayed on the left and menu items to the right-->
   <nav class="navbar navbar-expand-md bg-body-tertiary bg-primary" role="navigation" aria-label="Main Navigation">
-    <a class="navbar-brand text-primary fs-3 ms-3" href="index.html">
+    <a class="text-primary fs-3 ms-3" href="index.html">
       <div class="col-6">
         <picture>
           <!-- Source for larger screens -->
-          <source srcset="images/blitz-logo.png" media="(min-width: 768px)" width="365">
-  
+          <source srcset="images/blitz-logo.png" media="(min-width: 768px)" >
+
           <!-- Source for smaller screens -->
-          <source srcset="images/blitz-logo-small.png" media="(max-width: 767px)" width="365">
-  
+          <source srcset="images/blitz-logo-small.png" media="(max-width: 767px)" >
+
           <!-- Default image for browsers that do not support srcset -->
-          <img class="img-fluid" src="images/blitz-logo.png" alt="blitz brickz logo" width="365">
+          <img class="img-fluid" src="images/blitz-logo.png" alt="blitz brickz logo" >
         </picture>
       </div>
     </a>
@@ -42,7 +42,8 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbar">
       <ul class="navbar-nav md-auto mb-2 mb-lg-0 ml-auto text-center" role="menu">
         <li class="nav-item" role="menuitem">
-          <a class="nav-link active text-primary display-1 mx-3 fs-2 animate-out" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link active text-primary display-1 mx-3 fs-2 animate-out" aria-current="page"
+            href="index.html">Home</a>
         </li>
         <li class="nav-item" role="menuitem">
           <a class="nav-link text-primary display-1 mx-3 fs-2 animate-out" href="about.html">About</a>
