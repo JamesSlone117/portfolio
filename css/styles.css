@@ -66,11 +66,36 @@
 }
 
 /* Background image styling with cover and centered position */
-.bg {
-    background-image: url(../images/header-banner.png);
-    background-size: cover;
-    background-position: center;
+
+
+
+@media (min-width: 768px) {
+    .bg {
+        background-image: url(../images/header-banner.png);
+        background-size: cover;
+        background-position: center;
+    }
 }
+
+@media (max-width: 767px) {
+    .bg {
+        background-image: url(../images/header-banner-small.png);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Set container height for hero section */
 #hero .container-fluid {
