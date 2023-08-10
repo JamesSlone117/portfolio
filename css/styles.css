@@ -89,19 +89,46 @@
     width: 100%; 
     height: 300px; 
     opacity: 0.7;
-    /* padding-top: 2rem; */
   }
 
-  /* @media screen and (min-width: 1400px) {
-    .card-img {
-        object-fit: contain; 
-        width: 100%; 
-        height: 37rem; 
-        opacity: 0.7;
-       
-      }
-   } */
+   /* :focus {
+    border: solid 2px var(--white-color-ffffff);
+  } */
 
-   :focus {
-    outline: 1px solid var(--white-color-ffffff);
+  .animate-out:hover {
+    color: var(--red-color-db1c1a) !important;
+    transform: scale(1.1);
+   
   }
+
+  .animate-out, .animate-btn, .animate-skip, .animate-icon {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    font-weight: bold;
+  }
+
+
+  .animate-btn:hover {
+    color: var(--red-color-db1c1a) !important;
+    background-color: var(--white-color-ffffff) !important;
+    transform: scale(1.1);
+  }
+
+  .animate-skip:hover {
+    color: var(--red-color-db1c1a) !important;
+    transform: translateY(-5px);
+  }
+
+  .animate-icon:hover {
+    transform: scale(1.2);
+  }
+
+ 
+
+
+  
+
+
+
+

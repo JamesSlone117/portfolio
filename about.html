@@ -19,13 +19,22 @@
 <body class="bg-primary text-primary">
 
   <!-- repsonsive nav with logo dislayed on the left and menu items to the right-->
-  <nav class="navbar navbar-expand-md bg-body-tertiary bg-primary" role="navigation">
+  <nav class="navbar navbar-expand-md bg-body-tertiary bg-primary" role="navigation" aria-label="Main Navigation">
     <a class="navbar-brand text-primary fs-3 ms-3" href="index.html">
       <div class="col-6">
-        <img class="img-fluid" src="images/blitz-logo.png" alt="blitz brickz logo" width="365">
+        <picture>
+          <!-- Source for larger screens -->
+          <source srcset="images/blitz-logo.png" media="(min-width: 768px)" width="365">
+  
+          <!-- Source for smaller screens -->
+          <source srcset="images/blitz-logo-small.png" media="(max-width: 767px)" width="365">
+  
+          <!-- Default image for browsers that do not support srcset -->
+          <img class="img-fluid" src="images/blitz-logo.png" alt="blitz brickz logo" width="365">
+        </picture>
       </div>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+    <button class="navbar-toggler animate-out" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
       aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="text-primary fs-1"><i class="fa-solid fa-bars"></i></span>
     </button>
@@ -33,13 +42,13 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbar">
       <ul class="navbar-nav md-auto mb-2 mb-lg-0 ml-auto text-center" role="menu">
         <li class="nav-item" role="menuitem">
-          <a class="nav-link active text-primary display-1 mx-3 fs-2" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link active text-primary display-1 mx-3 fs-2 animate-out" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item" role="menuitem">
-          <a class="nav-link text-primary display-1 mx-3 fs-2" href="about.html">About</a>
+          <a class="nav-link text-primary display-1 mx-3 fs-2 animate-out" href="about.html">About</a>
         </li>
         <li class="nav-item" role="menuitem">
-          <a class="nav-link text-primary display-1 mx-3 fs-2" href="contact.html">Contact</a>
+          <a class="nav-link text-primary display-1 mx-3 fs-2 animate-out" href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
@@ -55,10 +64,28 @@
           creating. With over 3 years of experience in self taught video editing and photoshop skills. I started
           freelance video editing for content creators in 2022. </p>
       </div>
+      
+
+
       <picture class="col-md-6 order-0">
+        <!-- Source for larger screens -->
+        <source srcset="images/james-about.png" media="(min-width: 768px)"
+        alt="image of james slone holding a camera outside">
+      
+        <!-- Source for smaller screens -->
+        <source srcset="images/james-about-small.png" media="(max-width: 767px)"
+        alt="image of james slone holding a camera outside">
+
+        <!-- Default image for browsers that do not support srcset -->
         <img class="img-fluid border border-5 image-without-gap rounded" src="images/james-about.png"
           alt="image of james slone holding a camera outside">
       </picture>
+
+
+
+
+
+
     </div>
   </article>
 
@@ -90,12 +117,12 @@
 
   <aside class="container text-center p-5">
     <h4 class="display-5" role="heading" aria-level="4">Contact Me</h4>
-    <a aria-label="contact button" class="btn btn-primary btn-lg text-primary" href="contact.html">Contact</a>
+    <a aria-label="contact button" class="btn btn-primary btn-lg text-primary animate-btn" href="contact.html">Contact</a>
   </aside>
 
   <!-- skip link that brings you back to the top -->
   <div class="container text-end">
-    <a href="#" class="btn text-primary btn-floating" id="skiplink" role="link">
+    <a href="#" class="btn text-primary btn-floating animate-skip" id="skiplink" role="link">
       <i class="fa-solid fa-angles-up display-3 p-3"></i>
     </a>
   </div>
@@ -113,14 +140,14 @@
         <div class="col-md-6 col-sm-12 text-md-right text-center">
           <!-- Social icons on the right for desktop -->
           <div class="social-icons">
-            <a href="https://youtube.com/@BlitzBrickz" role="link" aria-label="YouTube">
-              <i class="fa-brands fa-youtube text-primary fs-2 mx-3"></i></a>
-            <a href="https://www.instagram.com/Blitz_Brickz/" role="link" aria-label="Instagram">
-              <i class="fa-brands fa-twitter text-primary fs-2 mx-3"></i></a>
-            <a href="https://twitter.com/Blitz_Brickz" role="link" aria-label="Twitter">
-              <i class="fa-brands fa-instagram text-primary fs-2 mx-3"></i></a>
-            <a href="https://github.com/JamesSlone117" role="link" aria-label="Github">
-              <i class="fa-brands fa-github text-primary fs-2 mx-3"></i></a>
+            <a href="https://youtube.com/@BlitzBrickz" role="link" aria-label="YouTube" target="_blank">
+              <i class="fa-brands fa-youtube text-primary fs-2 mx-3 animate-icon"></i></a>
+            <a href="https://www.instagram.com/Blitz_Brickz/" role="link" aria-label="Instagram" target="_blank">
+              <i class="fa-brands fa-twitter text-primary fs-2 mx-3 animate-icon"></i></a>
+            <a href="https://twitter.com/Blitz_Brickz" role="link" aria-label="Twitter" target="_blank">
+              <i class="fa-brands fa-instagram text-primary fs-2 mx-3 animate-icon"></i></a>
+            <a href="https://github.com/JamesSlone117" role="link" aria-label="Github" target="_blank">
+              <i class="fa-brands fa-github text-primary fs-2 mx-3 animate-icon"></i></a>
           </div>
         </div>
       </div>
