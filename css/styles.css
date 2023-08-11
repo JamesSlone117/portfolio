@@ -172,5 +172,14 @@
     }
   }
 
+
+
+  @media (max-width: 767px) {
+    .navbar-brand img {
+      max-width: 100px; /* Adjust the value as needed */
+      height: auto;
+    }
+  }
+
   
   
